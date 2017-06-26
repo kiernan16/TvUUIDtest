@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tvuuidtest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +20,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opR-34-RVb">
+                                <rect key="frame" x="914" y="160" width="93" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="r9b-Iy-3zV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDFV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqx-dH-9OK">
+                                <rect key="frame" x="919" y="52" width="82" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BRF-ap-MC6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDFA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHF-q8-iFy">
+                                <rect key="frame" x="920" y="684" width="81" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="71u-hp-uiv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsv-ch-xzq">
+                                <rect key="frame" x="914" y="797" width="93" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="XWP-F3-Xqn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wsv-ch-xzq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="173-HY-vRf"/>
+                            <constraint firstItem="jHF-q8-iFy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3An-fb-gN9"/>
+                            <constraint firstItem="opR-34-RVb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWb-kY-SwH"/>
+                            <constraint firstItem="zqx-dH-9OK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cIY-xX-UD7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wsv-ch-xzq" secondAttribute="bottom" constant="133" id="h2Q-o8-WgP"/>
+                            <constraint firstItem="zqx-dH-9OK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="jRY-jC-T28"/>
+                            <constraint firstItem="Wsv-ch-xzq" firstAttribute="top" secondItem="jHF-q8-iFy" secondAttribute="bottom" constant="13" id="tNY-zy-Z5q"/>
+                            <constraint firstItem="opR-34-RVb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="160" id="uBe-6E-9s8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="idfaLabel" destination="Wsv-ch-xzq" id="RVH-6C-Bge"/>
+                        <outlet property="idfvLabel" destination="opR-34-RVb" id="wDh-0F-RpD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
